@@ -1,0 +1,343 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px; /* Add space above detection types heading */
+    text-align: center; /* Center the detection types heading */
+}
+.mii{
+    text-align: center;
+    margin: 100px;
+    font-weight: lighter;
+}
+
+.mi{
+    text-align: center;
+    /* margin: 100px; */
+    font-weight: lighter;
+}
+.mini {
+font-size:small;    
+font-weight:bold;
+color: #02080f94;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(234, 244, 245, 0.432);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}.lcontainer {
+    max-width: 300px;
+
+    margin: 100px 15px 25px 500px;
+    background:  rgba(234, 244, 245, 0.432);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color:#FFC107;
+    color: #3B2A1A;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btnr{
+    border-radius: 4px;
+    margin:2px 10px 4px 1000px;
+
+   
+}
+.btnr a{
+    text-decoration: none;   
+    color: white;
+}
+button:hover {
+    background-color:#ffbf00;
+
+   
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for detection types */
+.detection-types {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin below types */
+}
+
+.detection-component {
+    flex: 1;
+    margin: 0 10px; /* Add space between components */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+.detection-component:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.det{
+    max-height:60PX;
+
+    padding: 10px;
+    background-color:rgb(249, 246, 242);
+    /* color: white; */
+    border-radius: 4px; 
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+  
+}
+
+.navbar {
+        
+        background-color:   #FFC107;
+        box-shadow: 0 6px 8px rgba(17, 219, 192, 0.1);
+        
+    }
+    
+
+
+.navbar-logo a {
+ border-radius: 6px;
+    margin:0px 20px;
+}
+
+.navbar-logo a:hover {
+ 
+    transform:scale(1.1);
+}
+
+.logo-img {
+    height: 40px; /* Adjust as needed */
+    margin-right: 10px; /* Space between logo and text */
+    border-radius: 10px;
+}
+
+.navbar-links {
+    display: flex; /* Align links in a row */
+}
+
+.navc{
+    margin-top: -5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: -5px;
+    border-radius: 6px;
+
+   
+}
+.nv{
+   
+    border-radius: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    transition: transform 0.5s; 
+    
+}
+.nv:hover{
+    transform: scale(1.15);
+    background-color:#fdbe01;
+    color: #001F3F;
+
+}
+
+.navbar-links a {
+    margin: 0 5px; /* Spacing between links */
+    color: #333; /* Dark gray for text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+
+}
+
+.navbar-links a:hover {
+  
+    color: #0f0f0fc4; /* Change color on hover */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+.detection-container {
+    display: flex; /* Align items in a row */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Margin around the container */
+    padding: 20px; /* Padding around the container */
+
+}
+
+.detection-type {
+    width: 100%; /* Full width for each type */
+    margin: 10px 0; /* Vertical margin for separation */
+    padding: 5px; /* Padding inside the detection type div */
+    background-color: rgb(255, 255, 255); /* Background color for each detection type */
+    border-radius: 6px;
+    border: solid   #3B2A1A;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+
+}
+
+.detection-box {
+    width :250px;
+    padding: 20px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center; /* Center text */
+    /* max-width: 300px; */
+    margin-top: 4px;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 4px;
+    transition: transform 0.5s; 
+    
+}
+.he{
+    display: flex;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+.box-1 {
+    background-color: #FFC107;
+ /* Background for Database Detection */
+    color:rgb(58, 55, 55); /* Text color */
+}
+
+.box-2 {
+    background-color:#FFC107; /* Background for Direct Comparison */
+    color: rgb(58, 55, 55); /* Text color */
+}
+
+
+
+
+.detection-box a {
+    color: inherit; /* Link inherits color from box */
+    text-decoration: none; /* Remove underline */
+    font-size: 24px; /* Larger font for visibility */
+}
+
+.detection-box:hover {
+    transform: scale(1.06); /* Slightly enlarge on hover */
+    color: #3B2A1A;
+    background-color:rgba(255, 191, 0, 0.965)
+    
+    
+}
+
+.ex{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center; 
+
+}
+.another-div:hover{
+    transform: scale(1.05);
+}
+
+.another-div {
+    /* flex: 1 1 auto;  */
+    height: 100px;
+    width: 300px;
+    border:  1.5px solid #3B2A1A; 
+    background-color: #FFC107;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    /* padding-bottom: 60px; */
+    border-radius: 6px;
+    transition: transform 0.5s; 
+    box-shadow: 0px 2px 5px #141414;
+    
+}
+ .im{
+display: flex;
+ }
+ .im1{
+    margin-top: -20px;
+    margin-left: 80px;
+    margin-right: 4px;
+    width:300px;
+ }
+ .hi h1{
+    margin-left:125px;
+    text-align: left;
+ }
+ .hp{
+    display: flex;
+    justify-content:center ;
+ }
+ .head {
+    font-size: 2.5em; /* Larger font size */
+    color: #ffffff; /* White text color for better contrast */
+    text-align: center; /* Center alignment */
+    padding: 8px 20px; /* Adjusted padding for better spacing */
+    background: #a06c3b; /* Solid background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Spacing between letters */
+    font-weight: 500; /* Consistent font weight */
+    width:700px;
+}

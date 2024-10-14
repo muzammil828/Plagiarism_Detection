@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+        .flashes {
+            list-style-type: none;
+            padding: 0;
+        }
+        .flashes li {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+  
+ <nav class="navbar">
+    <div class="navbar-logo ">
+        <a href="/">
+            <img src="{{ url_for('static', filename='plagiarismimaged.png') }}" alt="Logo" class="logo-img">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <div class="navc">  <a href="/"><div class="nv">Home</div></a></div>
+        <div class="navc">   <a href="/db_detection"><div class="nv">Check Plagiarism Against Database</div></a></div>
+         <div class="navc">  <a href="/direct_comparison"><div class="nv">Compare Two Texts Directly</div></a></div>
+        {% if current_user.is_authenticated %}
+             <div class="navc"> <a href="/logout"><div class="nv">Logout</div></a></div>
+      {% else %}
+      <div class="navc"> <a href="/login"><div class="nv">Login</div></a></div>
+      <div class="navc"><a href="/signup"><div class="nv">Signup</div></a></div>
+      {% endif %}
+  
+    </div>
+</nav>
+
+<br>
+<br>
+    <br>
+   
+    <div class="hp">
+    <div class="head">PLAGIARISM DETECTOR</div></div>
+    <br><br><br>
+    <br>
+    <div class="hi"><h1>How Does Plagiarism Checker Work?</h1></div>
+
+    <div class="im"> 
+        <h3 class="mi">
+            Our online plagiarism checker compares your text to billions of web pages and academic papers in ProQuest's databases. If part of your text matches something online or in a database, you'll get a plagiarism alert.
+        
+            When using the free online plagiarism check, you'll receive an instant report indicating any found plagiarism and grammar issues. The Premium plagiarism checker flags specific sentences, provides source references, calculates an overall originality score, and offers advanced writing feedback and corrections.
+        </h3>
+        <img src="{{ url_for('static', filename='plagiarism-check.png') }}"  height="300px" alt="hii" class="im1">
+    </div>
+<br><br><br>
+<br>
+    <br>
+    <h1>Who Benefits from Plagiarism Checker?</h1>
+
+    <h3 class="mi"> Whether you’re a student writing an essay, a teacher grading papers, or a writer working on original content for the web, a plagiarism scan will not only save you time, but also help you avoid writing mistakes.</h3>
+    <br><br><br><br>
+
+    <br><br><br><br>
+
+
+
+    <h1>Select The Type Of Detection </h1>
+    <br>
+    <div class="detection-container">
+        <div class="he">
+         <div class="detection-type" >
+             <div class="detection-box box-1">
+                 <a href="/db_detection">Database Detection</a>
+                 <h6 class="mini">{compares given texts against DB}</h6>
+             </div>
+         </div></div>
+         <br>
+         <div class="he">
+         <div class="detection-type" >
+             <div class="detection-box box-2">
+                 <a href="/direct_comparison">Direct Comparison</a>
+                 <h6 class="mini">{compares two texts directly}</h6>
+             </div>
+         </div></div>
+        
+     </div>
+ 
+    <br><br><br><br><br><br><br><br><br><br>
+
+ 
+
+    <div class="ex">
+       <div class="another-div"><h2>about us</h2h2>
+            <br><div class="mini">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+       </div>
+       <div class="another-div">
+            <h2> contact us</h2h2>
+            <br><div class="mini">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        </div>
+            
+        </div>
+   
+   
+</body>
+
+</html>

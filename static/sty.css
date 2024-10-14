@@ -1,0 +1,45 @@
+.navbar {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+    background-color: #34495e; /* Dark background color */
+    padding: 15px 30px; /* Padding around the navbar */
+}
+
+.navbar-logo .logo-img {
+    height: 50px; /* Set logo height */
+}
+
+.navbar-links {
+    display: flex; /* Flexbox for links */
+}
+
+.navc {
+    margin: 0 15px; /* Margin between navigation items */
+}
+
+.nv {
+    color: #ecf0f1; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Font size */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.nv:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.nv:hover {
+    color: #f1c40f; /* Change color on hover */
+}
+.head {
+    font-size: 2.5em; /* Larger font size */
+    color: #2c3e50; /* Dark blue color */
+    text-align: center; /* Center alignment */
+    padding: 20px; /* Padding around the text */
+    background: linear-gradient(to right, #f39c12, #f1c40f); /* Yellow gradient */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Spacing between letters */
+}
